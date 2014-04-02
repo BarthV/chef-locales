@@ -67,7 +67,7 @@ def file_append_line(path, line_to_append)
     end
   else
     begin
-      f = ::File.open(new_resource.path, "w")
+      f = ::File.open(path, "w")
       f.puts line_to_append
     ensure
       f.close
